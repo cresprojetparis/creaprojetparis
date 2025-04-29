@@ -2,53 +2,121 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CréaProjet Paris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CréaProjetParis - Construire l'avenir ensemble</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; }
-    header {
-      background: url('banner.jpg') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
     }
-    h1 { margin-bottom: 10px; font-size: 2.5em; }
-    p { font-size: 1.2em; }
-    .btn {
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .services, .energy, .cta {
+      background-color: white;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .service-item {
+      margin-bottom: 1rem;
+    }
+    .cta {
+      text-align: center;
+    }
+    .cta a {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #007acc;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #003366;
       color: white;
       text-decoration: none;
       border-radius: 5px;
     }
-    section {
-      padding: 50px 20px;
-      background: #f9f9f9;
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #e9ecef;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #003366;
+      text-decoration: none;
+      margin: 0 0.5rem;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>CréaProjet Paris</h1>
-  <p>Innover pour un futur durable</p>
-  <a href="#about" class="btn">En savoir plus</a>
-</header>
+  <header>
+    <h1>CréaProjetParis</h1>
+    <p>Construire l'avenir ensemble</p>
+  </header>
 
-<section id="about">
-  <h2>Qui sommes-nous ?</h2>
-  <p>
-    CréaProjet Paris est une entreprise spécialisée dans l'innovation, l'architecture durable,
-    et la conception de projets qui répondent aux défis de demain. Notre expertise dans le secteur du bâtiment
-    et notre approche créative nous permettent de concevoir des solutions sur mesure, en parfaite harmonie avec les besoins de nos clients.
-  </p>
-</section>
+  <section class="intro">
+    <p><strong>CréaProjetParis</strong> est un bureau d’étude spécialisé dans la conception, l’innovation et l’accompagnement de projets dans le bâtiment.</p>
+    <p>Fort d’une expérience de plus de 15 ans, nous transformons vos idées en projets concrets, durables et optimisés.</p>
+  </section>
 
-<footer style="text-align:center; padding:20px; background:#333; color:#fff;">
-  © 2025 CréaProjet Paris. Tous droits réservés.
-</footer>
+  <section class="services">
+    <h2>Nos services</h2>
+    <div class="service-item">
+      <strong>Études techniques & dessins 2D/3D</strong><br />
+      Conception de plans précis, modélisation de projets architecturaux et techniques.
+    </div>
+    <div class="service-item">
+      <strong>Accompagnement travaux</strong><br />
+      De la conception à la réalisation, un suivi de A à Z.
+    </div>
+    <div class="service-item">
+      <strong>Audit & rénovation énergétique</strong><br />
+      Diagnostic, conseil et solutions pour améliorer la performance énergétique.
+    </div>
+    <div class="service-item">
+      <strong>Design & innovation</strong><br />
+      Intégration de solutions innovantes et esthétiques dans vos projets.
+    </div>
+  </section>
+
+  <section class="energy">
+    <h2>Projets énergétiques</h2>
+    <p><em>Investir dans l’énergie de demain.</em></p>
+    <p>CréaProjetParis vous accompagne dans vos projets de transition énergétique : solaire, rénovation thermique, diagnostics DPE.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Vous avez un projet ?</h2>
+    <p>Contactez-nous dès maintenant pour un premier échange.</p>
+    <a href="mailto:creaprojetparis@email.com">Nous contacter</a>
+  </section>
+
+  <footer>
+    &copy; 2025 CréaProjetParis — 
+    <a href="#">Qui sommes-nous</a> |
+    <a href="#">Nos services</a> |
+    <a href="#">Mentions légales</a>
+  </footer>
 
 </body>
 </html>
