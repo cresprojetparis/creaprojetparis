@@ -1,4 +1,156 @@
-fvv<section id="about-us">
-    <h2>Qui sommes-nous ?</h2>
-    <p>CréaProjet Paris est une entreprise innovantee H VRTYSVH JHIEI dans l'architecture mais un vrai dangir durable et la conception de projets sur mesure. Notre expertise dans le secteur du bâtiment nous permet de proposer des solutions adaptées aux défis de demain, avec un engagement fort envers la durabilité et l'innovation.</p>
-</section> guga daba
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CréaProjetParis</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c2c2c;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      background: url('image-maison.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #ffd700;
+      padding-left: 1rem;
+    }
+
+    .services,
+    .contact {
+      background-color: #2c2c2c;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
+
+    .footer {
+      background-color: #111;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>CréaProjetParis</strong></div>
+      <div>
+        <a href="#services">Nos services</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>CréaProjetParis — Bureau d'étude & innovation</h1>
+  </div>
+
+  <section id="services">
+    <h2>Nos services</h2>
+    <div class="services">
+      <p>Études techniques, conception de projets, rénovation énergétique, plans d’architecture et accompagnement personnalisé pour vos projets de construction ou de rénovation.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Avec plus de 15 ans d’expérience dans le bâtiment et l’ingénierie mécanique, CréaProjetParis met son expertise au service de vos projets, avec une approche professionnelle, rigoureuse et innovante.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Adresse : Paris, France</p>
+      <p>Email : contact@creaprojetparis.fr</p>
+      <p>Téléphone : 01 23 45 67 89</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 CréaProjetParis. Tous droits réservés.
+  </div>
+</body>
+</html>
