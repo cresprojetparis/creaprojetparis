@@ -1,80 +1,155 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CréaProjetParis</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
     html {
       scroll-behavior: smooth;
     }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c2c2c;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      background: url('image-maison.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #ffd700;
+      padding-left: 1rem;
+    }
+
+    .services,
+    .contact {
+      background-color: #2c2c2c;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
+
+    .footer {
+      background-color: #111;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
   </style>
 </head>
-<body class="bg-gray-900 text-white">
-
-  <!-- Menu -->
-  <header class="bg-gray-950 shadow-md fixed top-0 w-full z-50">
-    <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="text-xl font-bold">CréaProjetParis</div>
-      <ul class="flex space-x-6 text-sm font-medium">
-        <li><a href="#apropos" class="hover:text-gray-300">À propos</a></li>
-        <li><a href="#services" class="hover:text-gray-300">Nos services</a></li>
-        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
-      </ul>
+<body>
+  <header>
+    <nav>
+      <div><strong>CréaProjetParis</strong></div>
+      <div>
+        <a href="#services">Nos services</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <!-- Hero section -->
-  <section class="h-screen bg-cover bg-center flex items-center justify-center text-center px-4" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');">
-    <div class="bg-black bg-opacity-60 p-6 rounded-xl max-w-3xl">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Ingénierie, conception & innovation dans le bâtiment</h1>
-      <p class="text-xl">Construisons l’avenir ensemble</p>
+  <div class="hero">
+    <h1>CréaProjetParis — Bureau d'étude & innovation</h1>
+  </div>
+
+  <section id="services">
+    <h2>Nos services</h2>
+    <div class="services">
+      <p>Études techniques, conception de projets, rénovation énergétique, plans d’architecture et accompagnement personnalisé pour vos projets de construction ou de rénovation.</p>
     </div>
   </section>
 
-  <!-- À propos -->
-  <section id="apropos" class="py-16 px-4 bg-gray-100 text-gray-800">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">À propos de CréaProjetParis</h2>
-      <p class="text-lg leading-relaxed">
-        CréaProjetParis est un bureau d'étude et de conception spécialisé dans les projets innovants du bâtiment.
-        Forts de plus de 15 ans d'expérience, nous accompagnons nos clients de l'idée à la réalisation avec expertise technique, vision créative et solutions durables.
-      </p>
-    </div>
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Avec plus de 15 ans d’expérience dans le bâtiment et l’ingénierie mécanique, CréaProjetParis met son expertise au service de vos projets, avec une approche professionnelle, rigoureuse et innovante.</p>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="py-16 px-4 bg-gray-200 text-gray-900">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Nos Offres & Services</h2>
-      <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>Études techniques et conception sur mesure</li>
-        <li>Conseil en rénovation énergétique et transition écologique</li>
-        <li>Assistance à maîtrise d’ouvrage (AMO) et coordination de chantier</li>
-        <li>Modélisation 2D/3D et visualisation architecturale</li>
-        <li>Dossiers administratifs et réglementaires</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-16 px-4 bg-gray-800 text-white">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Contact</h2>
-      <p class="mb-4 text-lg">Pour tout renseignement ou demande de projet :</p>
-      <p>Email : <a href="mailto:contact@creaprojetparis.fr" class="underline">contact@creaprojetparis.fr</a></p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Adresse : Paris, France</p>
+      <p>Email : contact@creaprojetparis.fr</p>
       <p>Téléphone : 01 23 45 67 89</p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-center text-sm py-4">
-    © 2025 CréaProjetParis. Tous droits réservés.
-  </footer>
-
-
+  <div class="footer">
+    &copy; 2025 CréaProjetParis. Tous droits réservés.
+  </div>
+</body>
+</html>
